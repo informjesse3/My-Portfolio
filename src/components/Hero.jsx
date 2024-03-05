@@ -61,6 +61,8 @@ const Hero = () => {
               animate={{
                 y: [0, 24, 0],
               }}
+
+              
               transition={{
                 duration: 4.5,
                 repeat: Infinity,
