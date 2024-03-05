@@ -2,6 +2,10 @@ import React from "react";
 import { motion, stagger } from "framer-motion";
 import hs1 from "../assets/hsmodels/jesssent1.png";
 import hs2 from "../assets/hsmodels/jesscity4.png";
+import hs3 from "../assets/hsmodels/hsmodel.png";
+import hs4 from "../assets/hsmodels/hsmodel1.png";
+import hs5 from "../assets/hsmodels/hsmodel2.png";
+import hs6 from "../assets/hsmodels/hsmodel3.png";
 import { styles } from "../styles";
 import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -26,42 +30,48 @@ const ServiceCard = ({index, title, icon}) => {
 
 const About = () => {
   return (
-    <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionHeadText}>Introduction</p>
-        <h2 className={styles.sectionSubText}>Purpose.</h2>
-      </motion.div>
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[14px] max-w-3xl leading-30"
-      >
-        We are a family owned company and started off for the love of playing
-        video games in the heart of Michigan. We got tired of the same games and
-        how the games being built would never listen to the people playing. We
-        wanted to change that. We started the company We Have The Power Have The
-        Power. We will be having several divisions of this company. This is th
-        gaming division. This is just the begining of what can be done. We will
-        be having Charity. Learning as well as local events
-      </motion.p>
-      <div className="mt-20 flex flex-wrap gap-10">
-        {/* {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))} */}
-        <div className=" rounded-lg">
-          <img src={hs1} alt="pic" width={500} className="rounded-lg" />
-        </div>
-        <div className=" rounded-lg">
-          <img src={hs2} alt="pic" width={500} className="rounded-lg" />
-        </div>
-        <div className=" rounded-lg">
-          <img src={hs1} alt="pic" width={500} className="rounded-lg" />
-        </div>
-        <div className="rounded-lg">
-          <img src={hs1} alt="pic" width={500} className="rounded-lg" />
+    <div className="relative z-0 bg-white w-full ">
+      <div className="ml-8 ">
+        <motion.div variants={textVariant()}>
+          <p className={styles.sectionHeadText}>Introduction</p>
+          <h2 className={styles.sectionSubText}>Purpose.</h2>
+        </motion.div>
+        <motion.p
+          variants={fadeIn("", "", 0.1, 1)}
+          className="mt-4 text-secondary text-[14px] max-w-3xl leading-30"
+        >
+          We are a family owned company and started off for the love of playing
+          video games in the heart of Michigan. We got tired of the same games
+          and how the games being built would never listen to the people
+          playing. We wanted to change that. We started the company We Have The
+          Power Have The Power. We will be having several divisions of this
+          company. This is th gaming division. This is just the begining of what
+          can be done. We will be having Charity. Learning as well as local
+          events
+        </motion.p>
+        <div className="mt-20 flex flex-wrap gap-10">
+          <div className=" rounded-lg">
+            <img src={hs3} alt="pic" width={500} className="rounded-lg" />
+          </div>
+          <div className="rounded-lg">
+            <img src={hs4} alt="pic" width={500} className="rounded-lg" />
+          </div>
+          <div className=" rounded-lg">
+            <img src={hs5} alt="pic" width={500} className="rounded-lg" />
+          </div>
+          <div className=" rounded-lg">
+            <img src={hs6} alt="pic" width={500} className="rounded-lg" />
+          </div>
+          <div className=" rounded-lg">
+            <img src={hs2} alt="pic" width={500} className="rounded-lg" />
+          </div>
+          <div className=" rounded-lg">
+            <img src={hs2} alt="pic" width={500} className="rounded-lg" />
+          </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
-export default SectionWrapper (About, "about")
+export default About

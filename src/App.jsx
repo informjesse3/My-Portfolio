@@ -26,7 +26,7 @@ const App = () => {
 
   return (
     <HashRouter>
-      <Navbar />
+      {/* <Navbar /> */}
       <Routes>
         <Route index element={<Hero />} />
         <Route path="/" element={<Hero />} />
