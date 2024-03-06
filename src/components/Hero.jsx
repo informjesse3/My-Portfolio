@@ -10,8 +10,6 @@ import Navbar from "./Navbar";
 const Hero = () => {
   return (
     <>
-
-  
       <section className="relative w-full h-screen mx-auto bg-white">
         <div className="flex flex-row justify-between ml-28 text-center mr-6">
           <h1 className="text-[#915eff] my-4 text-xl cursor-pointer ">Home</h1>
@@ -29,7 +27,7 @@ const Hero = () => {
             <div className="w-5 h-5 rounded-full bg-[#915eff]" />
             <div className="w-1 sm:h-80 h-40  violet-gradient" />
           </div>
-          <div>
+          <div className="h-[500px]">
             <h1 className="text-[gray]">
               In the world of creativity.
               <span className="text-[#915eff]">JessEnT</span>
@@ -42,14 +40,13 @@ const Hero = () => {
             {/* <div className="flex flex-row mt-6 w-full ">
             <div className=" h-80 w-80 bg-hero-pattern bg-cover bg-center"></div>
           </div> */}
+            <EarthCanvas />
           </div>
-
-          <EarthCanvas />
         </div>
 
         {/* <EarthCanvas /> */}
-        {/* 
-      <div className="my-80">
+
+        {/* <div className="my-80">
         {" "}
         <Login />
       </div> */}
