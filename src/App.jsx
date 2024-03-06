@@ -21,12 +21,9 @@ import {
 } from "./components";
 import Jessent from "./components/Jessent";
 const App = () => {
-
-
-
   return (
     <HashRouter>
-      {/* <Navbar /> */}
+      <Navbar />
       <Routes>
         <Route index element={<Hero />} />
         <Route path="/" element={<Hero />} />
@@ -35,7 +32,6 @@ const App = () => {
         <Route path="/model" element={<Jessent />} />
       </Routes>
     </HashRouter>
-
   );
 };
 
