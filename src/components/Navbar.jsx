@@ -28,7 +28,6 @@ const Navbar = () => {
       <AiOutlineMenu
         onClick={handleNav}
         className="absolute top-4 right-4 z-[99] md:hidden text-black"
-        
       />
       {nav ? (
         <div className="fixed w-full h-screen bg-white/90 flex flex-col justify-center items center z-20">
@@ -62,9 +61,9 @@ const Navbar = () => {
           <NavLink
             onClick={handleNav}
             to="exp"
-            className="w-[75%] flex justify-center items-center rounded-full  m-2 p-4 cursor-pointed hover:scale-110 ease-in duration-200"
+            className="w-[75%] flex justify-center items-center rounded-full bg-gray-100  m-2 p-4 cursor-pointed hover:scale-110 ease-in duration-200"
           >
-            <BsPerson size={20} className="text-gray-800"/>
+            <BsPerson size={20} className="text-gray-800" />
             <span className="pl-4 text-gray-800">Resume</span>
           </NavLink>
 
