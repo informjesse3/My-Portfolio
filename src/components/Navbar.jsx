@@ -52,7 +52,7 @@ const Navbar = () => {
 
           <NavLink
             onClick={handleNav}
-            to="exp"
+            to="about"
             className="w-[75%] flex justify-center items-center rounded-full bg-gray-100 m-2 p-4 cursor-pointed hover:scale-110 ease-in duration-200"
           >
             <AiOutlineProject size={20} className=" text-gray-800" />
