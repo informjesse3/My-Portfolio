@@ -3,9 +3,7 @@ import React from "react";
 export default function Kontact() {
   return (
     <>
-  
       <section className="relative w-full h-full mx-auto bg-white">
-
         <div id="contact" className="max-w-[1040px] m-4 md:pl-20 py-16">
           <h1 className="py-4 text-4xl font-bold text-center text-[#000]">
             Contact
@@ -17,42 +15,52 @@ export default function Kontact() {
           >
             <div className="gird md:grid-cols-2 gap-4 w-full py-2">
               <div className="flex flex-col">
-                <label className="uppercase text-sm py-2 text-gray-600">Name</label>
+                <label className="uppercase text-sm py-2 text-gray-600">
+                  Name
+                </label>
                 <input
-                  className="border-2 rounded-lg p-3 flex border-gray-300 bg-transparent"
+                  className="border-2 rounded-lg p-3 flex border-gray-300 bg-white text-gray-800"
                   type="text"
                   name="name"
                 />
               </div>
               <div className="flex-col">
-                <label className="uppercase text-sm py-2 text-gray-600">Phone</label>
+                <label className="uppercase text-sm py-2 text-gray-600">
+                  Phone
+                </label>
                 <input
-                  className="border-2 rounded-lg p-3 flex border-gray-300 bg-transparent"
+                  className="border-2 rounded-lg p-3 flex border-gray-300 bg-white text-gray-800"
                   type="text"
                   name="phone"
                 />
               </div>
             </div>
             <div className="flex flex-col py-2">
-              <label className="uppercase text-sm py-2 text-gray-600">Email</label>
+              <label className="uppercase text-sm py-2 text-gray-600">
+                Email
+              </label>
               <input
-                className="border-2 rounded-lg p-3 flex border-gray-300 bg-transparent"
+                className="border-2 rounded-lg p-3 flex border-gray-300 bg-white text-gray-800"
                 type="email"
                 name="email"
               />
             </div>
             <div>
-              <label className="uppercase text-sm py-2 text-gray-600">Subject</label>
+              <label className="uppercase text-sm py-2 text-gray-600">
+                Subject
+              </label>
               <input
-                className="border-2 rounded-lg p-3 flex border-gray-300 bg-transparent"
+                className="border-2 rounded-lg p-3 flex border-gray-300 bg-white text-gray-800"
                 type="text"
                 name="subject"
               />
             </div>
             <div className="flex flex-col py-2">
-              <label className="uppercase text-sm py-2 text-gray-600">Message</label>
+              <label className="uppercase text-sm py-2 text-gray-600">
+                Message
+              </label>
               <textarea
-                className="border-2 rounded-lg p-3 border-gray-300 bg-transparent"
+                className="border-2 rounded-lg p-3 border-gray-300 bg-white text-gray-800"
                 name="message"
                 rows="10"
               ></textarea>
