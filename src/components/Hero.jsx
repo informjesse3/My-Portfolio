@@ -6,6 +6,7 @@ import {ImArrowRight} from "react-icons/im"
 import Login from "./Login";
 import { NavLink } from "react-router-dom";
 import Navbar from "./Navbar";
+import HouseModel from "./canvas/HouseModel";
 
 const Hero = () => {
   return (
@@ -15,7 +16,6 @@ const Hero = () => {
           <h1 className="text-[#000] my-4 text-xl cursor-pointer ">Home</h1>
           <p className="text-gray-600 mt-[4rem] cursor-pointer hover:text-[#915eff] flex flex-row text-center justify-center gap-1">
             <span className="mt-1">
-
               <ImArrowRight />
             </span>
             <NavLink to={"model"}> Browse Models</NavLink>
@@ -41,10 +41,10 @@ const Hero = () => {
             {/* <div className="flex flex-row mt-6 w-full ">
             <div className=" h-80 w-80 bg-hero-pattern bg-cover bg-center"></div>
           </div> */}
-            <EarthCanvas />
+            {/* <EarthCanvas /> */}
           </div>
         </div>
-
+        <HouseModel />
         {/* <EarthCanvas /> */}
 
         {/* <div className="my-80">
