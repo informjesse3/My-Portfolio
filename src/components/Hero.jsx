@@ -12,9 +12,10 @@ const Hero = () => {
     <>
       <section className="relative w-full h-screen mx-auto bg-white">
         <div className="flex flex-row justify-between ml-4 text-center mr-6">
-          <h1 className="text-[#915eff] my-4 text-xl cursor-pointer ">Home</h1>
+          <h1 className="text-[#000] my-4 text-xl cursor-pointer ">Home</h1>
           <p className="text-gray-600 mt-[4rem] cursor-pointer hover:text-[#915eff] flex flex-row text-center justify-center gap-1">
             <span className="mt-1">
+
               <ImArrowRight />
             </span>
             <NavLink to={"model"}> Browse Models</NavLink>
@@ -30,7 +31,7 @@ const Hero = () => {
           <div className="h-[500px] w-full">
             <h1 className="text-[gray]">
               In the world of creativity.
-              <span className="text-[#915eff]">JessEnT</span>
+              <span className="text-[#000]">JessEnT</span>
             </h1>
             <p className={`${styles.heroSubText} mt-2 text-gray-400`}>
               Creativity is a wild mind
