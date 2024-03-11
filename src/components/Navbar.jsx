@@ -70,7 +70,7 @@ const Navbar = () => {
 
           <NavLink
             onClick={handleNav}
-            to="exp"
+            to="Kontact"
             className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointed hover:scale-110 ease-in duration-200"
           >
             <AiOutlineMail size={20} className="text-gray-800" />

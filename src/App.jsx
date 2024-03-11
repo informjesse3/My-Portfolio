@@ -20,6 +20,7 @@ import {
   StarsCanvas,
 } from "./components";
 import Jessent from "./components/Jessent";
+import Kontact from "./components/Kontact";
 const App = () => {
   return (
     <HashRouter>
@@ -29,6 +30,7 @@ const App = () => {
         <Route path="/" element={<Hero />} />
         <Route path="/exp" element={<Experience />} />
         <Route path="/about" element={<About />} />
+        <Route path="/Kontact" element={<Kontact />} />
         <Route path="/model" element={<Jessent />} />
       </Routes>
     </HashRouter>
