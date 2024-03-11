@@ -49,24 +49,48 @@ const About = () => {
           can be done. We will be having Charity. Learning as well as local
           events
         </motion.p>
-        <div className="mt-20 flex flex-wrap gap-10">
+        <div className="mt-20 flex flex-wrap gap-10 ">
           <div className=" rounded-lg">
             <img src={hs3} alt="pic" width={500} className="rounded-lg" />
+            <div>
+              <h1 className="text-gray-800 font-bold">Hskan wjkd</h1>
+              <p className="text-gray-600">bamcnvnmc</p>
+            </div>
           </div>
           <div className="rounded-lg">
             <img src={hs4} alt="pic" width={500} className="rounded-lg" />
+            <div>
+              <h1 className="text-gray-800 font-bold">Hskan wjkd</h1>
+              <p className="text-gray-600">bamcnvnmc</p>
+            </div>
           </div>
           <div className=" rounded-lg">
             <img src={hs5} alt="pic" width={500} className="rounded-lg" />
+            <div>
+              <h1 className="text-gray-800 font-bold">Hskan wjkd</h1>
+              <p className="text-gray-600">bamcnvnmc</p>
+            </div>
           </div>
           <div className=" rounded-lg">
             <img src={hs6} alt="pic" width={500} className="rounded-lg" />
+            <div>
+              <h1 className="text-gray-800 font-bold">Hskan wjkd</h1>
+              <p className="text-gray-600">bamcnvnmc</p>
+            </div>
           </div>
           <div className=" rounded-lg">
             <img src={hs2} alt="pic" width={500} className="rounded-lg" />
+            <div>
+              <h1 className="text-gray-800 font-bold">Hskan wjkd</h1>
+              <p className="text-gray-600">bamcnvnmc</p>
+            </div>
           </div>
           <div className=" rounded-lg">
             <img src={hs2} alt="pic" width={500} className="rounded-lg" />
+            <div>
+              <h1 className="text-gray-800 font-bold">Hskan wjkd</h1>
+              <p className="text-gray-600">bamcnvnmc</p>
+            </div>
           </div>
         </div>
       </div>
