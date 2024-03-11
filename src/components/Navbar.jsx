@@ -26,8 +26,9 @@ const Navbar = () => {
   return (
     <div>
       <AiOutlineMenu
+        color="#804dee"
         onClick={handleNav}
-        className="absolute top-4 right-4 z-[99] md:hidden text-black"
+        className="absolute top-4 right-4 z-[50] md:hidden text-[#804dee]"
       />
       {nav ? (
         <div className="fixed w-full h-screen bg-white/90 flex flex-col justify-center items center z-20">

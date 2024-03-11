@@ -27,7 +27,7 @@ const Hero = () => {
             <div className="w-5 h-5 rounded-full bg-[#915eff]" />
             <div className="w-1 sm:h-80 h-40  violet-gradient" />
           </div>
-          <div className="h-[500px]">
+          <div className="h-[500px] w-full">
             <h1 className="text-[gray]">
               In the world of creativity.
               <span className="text-[#915eff]">JessEnT</span>
