@@ -13,7 +13,7 @@ const Hero = () => {
     <>
       <section className="relative w-full h-screen mx-auto bg-white">
         <div className="flex flex-row justify-between ml-4 text-center mr-6">
-          <h1 className="text-[#000] my-4 text-xl cursor-pointer ">Home</h1>
+          <h1 className="text-[#000] my-4 text-3xl font-bold cursor-pointer ">Home</h1>
           <p className="text-gray-600 mt-[4rem] cursor-pointer hover:text-[#915eff] flex flex-row text-center justify-center gap-1">
             <span className="mt-1">
               <ImArrowRight />
