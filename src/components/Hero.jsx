@@ -18,7 +18,7 @@ const Hero = () => {
             <span className="mt-1">
               <ImArrowRight />
             </span>
-            <NavLink to={"model"}> Browse Models</NavLink>
+            <NavLink to={"model"}>Browse Models</NavLink>
           </p>
         </div>
         <div
