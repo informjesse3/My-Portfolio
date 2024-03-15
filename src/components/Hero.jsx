@@ -13,7 +13,9 @@ const Hero = () => {
     <>
       <section className="relative w-full h-screen mx-auto bg-white">
         <div className="flex flex-row justify-between ml-4 text-center mr-6">
-          <h1 className="text-[#000] my-4 text-3xl font-bold cursor-pointer ">Home</h1>
+          <h1 className="text-[#000] my-4 text-3xl font-bold cursor-pointer ">
+            Home
+          </h1>
           <p className="text-gray-600 mt-[4rem] cursor-pointer hover:text-[#915eff] flex flex-row text-center justify-center gap-1">
             <span className="mt-1">
               <ImArrowRight />
@@ -34,7 +36,7 @@ const Hero = () => {
               <span className="text-[#000]">JessEnT</span>
             </h1>
             <p className={`${styles.heroSubText} mt-2 text-gray-400`}>
-              Creativity is a wild mind
+              Creativity is a wild mind&nbsp;
               <br className="sm:block hidden" />
               and a disciplined eye.
             </p>

@@ -32,7 +32,7 @@ export default function Jessent() {
             Purpose.
           </h2>
         </motion.div>
-        <HouseModel />
+        <ComputersCanvas/>
       </div>
 
       <motion.p
