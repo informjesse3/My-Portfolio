@@ -18,24 +18,26 @@ const Hero = () => {
           </h1>
           <p className="text-gray-600 mt-[4rem] cursor-pointer hover:text-[#915eff] flex flex-row text-center justify-center gap-1">
             <span className="mt-1">
-              <ImArrowRight />
+              <ImArrowRight className="text-sm sm:lg" />
             </span>
-            <NavLink to={"model"}>Browse Models</NavLink>
+            <NavLink to={"model"} className="text-sm sm:md">
+              Browse Models
+            </NavLink>
           </p>
         </div>
         <div
-          className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
+          className={`${styles.paddinX} absolute inset-0 top-[120px] max-w-[1200px] flex flex-row items-start gap-5`}
         >
-          <div className="flex flex-col justify-center items-center mt-5">
-            <div className="w-5 h-5 rounded-full bg-[]" />
-            <div className="w-1 sm:h-80 h-40  grey-gradient" />
-          </div>
-          <div className="h-[500px] w-full">
-            <h1 className="text-[gray]">
+          {/* <div className="flex flex-col justify-center items-center mt-5">
+            <div className="w-5 h-5 rounded-full bg-gray-500" />
+            <div className="w-1 sm:h-80 h-40  bg-gray-400" />
+          </div> */}
+          <div className="h-full w-full flex flex-col ">
+            <h1 className="text-[gray] px-4">
               In the world of creativity.
               <span className="text-[#000]">JessEnT</span>
             </h1>
-            <p className={`${styles.heroSubText} mt-2 text-gray-400`}>
+            <p className={`${styles.heroSubText} mt-2 text-gray-400 px-4`}>
               Creativity is a wild mind&nbsp;
               <br className="sm:block hidden" />
               and a disciplined eye.
@@ -44,9 +46,13 @@ const Hero = () => {
             <div className=" h-80 w-80 bg-hero-pattern bg-cover bg-center"></div>
           </div> */}
             {/* <EarthCanvas /> */}
+
+            <div className="w-full h-[800px]">
+              <HouseModel />
+            </div>
           </div>
         </div>
-        <HouseModel />
+
         {/* <EarthCanvas /> */}
 
         {/* <div className="my-80">

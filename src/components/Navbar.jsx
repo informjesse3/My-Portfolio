@@ -80,8 +80,8 @@ const Navbar = () => {
       ) : (
         ""
       )}
-      <div className="md:block hidden fixed top-[25%] z-10">
-        <div className="flex flex-col">
+      <div className="md:block hidden  top-[25%] z-10 bg-slate-100">
+        <div className="flex flex-row justify-end ">
           <NavLink
             to="/"
             className="rounded-full shadow-lg  m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300"
