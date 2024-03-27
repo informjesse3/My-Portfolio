@@ -31,7 +31,7 @@ const HouseModel = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width:500)");
+    const mediaQuery = window.matchMedia("(max-width:700)");
     setIsMobile(mediaQuery.matches);
 
     const handleMediaQueryChange = (event) => {

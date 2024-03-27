@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { textVariant } from "../utils/motion";
 import { styles } from "../styles";
 import { ComputersCanvas, EarthCanvas } from "./canvas";
 import {ImArrowRight} from "react-icons/im"
@@ -7,24 +8,27 @@ import Login from "./Login";
 import { NavLink } from "react-router-dom";
 import Navbar from "./Navbar";
 import HouseModel from "./canvas/HouseModel";
+import { SectionWrapper } from "../hoc";
 
 const Hero = () => {
   return (
     <>
       <section className="relative w-full h-screen mx-auto bg-white">
-        <div className="flex flex-row justify-between ml-4 text-center mr-6">
-          <h1 className="text-[#000] my-4 text-3xl font-bold cursor-pointer ">
-            Home
-          </h1>
-          <p className="text-gray-600 mt-[4rem] cursor-pointer hover:text-[#915eff] flex flex-row text-center justify-center gap-1">
-            <span className="mt-1">
-              <ImArrowRight className="text-sm sm:lg" />
-            </span>
-            <NavLink to={"model"} className="text-sm sm:md">
-              Browse Models
-            </NavLink>
-          </p>
-        </div>
+        <motion.div variants={textVariant()}>
+          <div className="flex flex-row justify-between text-center">
+            <h1 className="text-[#000] my-4 text-3xl font-bold cursor-pointer ">
+              Home
+            </h1>
+            <p className="text-gray-600 cursor-pointer hover:text-[#915eff] flex flex-row text-center justify-center gap-1">
+              <span className="mt-1">
+                <ImArrowRight className="text-sm sm:lg" />
+              </span>
+              <NavLink to={"model"} className="text-sm sm:md">
+                Browse Models
+              </NavLink>
+            </p>
+          </div>
+        </motion.div>
         <div
           className={`${styles.paddinX} absolute inset-0 top-[120px] max-w-[1200px] flex flex-row items-start gap-5`}
         >
@@ -84,4 +88,5 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default SectionWrapper(Hero, "");
+
