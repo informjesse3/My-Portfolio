@@ -30,26 +30,28 @@ const ServiceCard = ({index, title, icon}) => {
 
 const About = () => {
   return (
-    <div className="relative z-0 bg-white w-full ">
-      <div className="ml-8 ">
+    <div className="relative flex justify-center bg-white w-full ">
+      <div className=" flex flex-col justify-center text-center">
         <motion.div variants={textVariant()}>
           <p className={styles.sectionHeadText}>Introduction</p>
           <h2 className={styles.sectionSubText}>Purpose.</h2>
         </motion.div>
-        <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
-          className="mt-4 text-secondary text-[14px] max-w-3xl leading-30"
-        >
-          We are a family owned company and started off for the love of playing
-          video games in the heart of Michigan. We got tired of the same games
-          and how the games being built would never listen to the people
-          playing. We wanted to change that. We started the company We Have The
-          Power Have The Power. We will be having several divisions of this
-          company. This is th gaming division. This is just the begining of what
-          can be done. We will be having Charity. Learning as well as local
-          events
-        </motion.p>
-        <div className="mt-20 flex flex-wrap gap-10 ">
+        <div className="justify-center text-center flex">
+          <motion.p
+            variants={fadeIn("", "", 0.1, 1)}
+            className="mt-4 text-secondary text-[14px] max-w-3xl leading-30 "
+          >
+            We are a family owned company and started off for the love of
+            playing video games in the heart of Michigan. We got tired of the
+            same games and how the games being built would never listen to the
+            people playing. We wanted to change that. We started the company We
+            Have The Power Have The Power. We will be having several divisions
+            of this company. This is th gaming division. This is just the
+            begining of what can be done. We will be having Charity. Learning as
+            well as local events
+          </motion.p>
+        </div>
+        <div className="mt-20 grid md:grid-cols-3 gap-2 px-2 justify-center">
           <div className=" rounded-lg">
             <img src={hs3} alt="pic" width={500} className="rounded-lg" />
             <div>
