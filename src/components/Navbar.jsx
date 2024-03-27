@@ -80,7 +80,7 @@ const Navbar = () => {
       ) : (
         ""
       )}
-      <div className="md:block hidden  top-[25%] z-10 bg-gray-100">
+      <div className="md:block hidden  top-[25%] z-10 bg-white">
         <div className="flex flex-row justify-end ">
           <NavLink
             to="/"

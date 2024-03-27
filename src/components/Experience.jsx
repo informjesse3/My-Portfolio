@@ -16,8 +16,8 @@ const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
-        background: "#1d1836",
-        color: "#fff",
+        background: "#fff",
+        color: "#000",
       }}
       contentArrowStyle={{ borderRight: "7px solid  #232631" }}
       date={experience.date}
@@ -33,9 +33,9 @@ const ExperienceCard = ({ experience }) => {
       }
     >
       <div>
-        <h3 className="text-white text-[24px] font-bold">{experience.title}</h3>
+        <h3 className="text-gray-800 text-[24px] font-bold">{experience.title}</h3>
         <p
-          className="text-secondary text-[16px] font-semibold"
+          className="text-gray-600 text-[16px] font-semibold"
           style={{ margin: 0 }}
         >
           {experience.company_name}
@@ -46,7 +46,7 @@ const ExperienceCard = ({ experience }) => {
         {experience.points.map((point, index) => (
           <li
             key={`experience-point-${index}`}
-            className="text-white-100 text-[14px] pl-1 tracking-wider"
+            className="text-gray-600 text-[14px] pl-1 tracking-wider"
           >
             {point}
           </li>
@@ -61,12 +61,12 @@ const Experience = () => {
     <>
       <motion.div variants={textVariant()}>
         <p
-          className={`sm:text-[18px] text-[14px] text-white uppercase tracking-wider text-center`}
+          className={`sm:text-[18px] text-[14px] text-gray-600 uppercase tracking-wider text-center`}
         >
           What we have done so far
         </p>
         <h2
-          className={`text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center`}
+          className={`text-gray-800 font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center`}
         >
           Work Experience.
         </h2>

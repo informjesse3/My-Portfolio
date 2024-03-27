@@ -13,7 +13,14 @@ import { Tilt } from "react-tilt";
 import { SectionWrapper } from "../hoc";
 
 
-
+const IMAGE = [
+  { pic: hs1, title: "House Model 1", des: "hsdhkba ajjahjdhk" },
+  { pic: hs2, title: "House Model 1", des: "hsdhkba ajjahjdhk" },
+  { pic: hs3, title: "House Model 1", des: "hsdhkba ajjahjdhk" },
+  { pic: hs4, title: "House Model 1", des: "hsdhkba ajjahjdhk" },
+  { pic: hs5, title: "House Model 1", des: "hsdhkba ajjahjdhk" },
+  { pic: hs6, title: "House Model 1", des: "hsdhkba ajjahjdhk" },
+];
 
 const ServiceCard = ({index, title, icon}) => {
   return(
@@ -51,49 +58,23 @@ const About = () => {
             well as local events
           </motion.p>
         </div>
-        <div className="mt-20 grid md:grid-cols-3 gap-2 px-2 justify-center">
-          <div className=" rounded-lg">
-            <img src={hs3} alt="pic" width={500} className="rounded-lg" />
+        <div className="mt-20 grid md:grid-cols-2 lg:grid-cols-3 gap-2 px-2 justify-center">
+          {IMAGE.map((image, index) => (
             <div>
-              <h1 className="text-gray-800 font-bold">Hskan wjkd</h1>
-              <p className="text-gray-600">bamcnvnmc</p>
+              <div className="" key={index}>
+                <img
+                  key={index}
+                  src={image.pic}
+                  alt="image"
+                  className="object-cover w-full h-full block shrink-0 grow-0 rounded-lg"
+                />
+              </div>
+              <div>
+                <h1 className="text-gray-800 font-bold">{image.title}</h1>
+                <p className="text-gray-600">{image.des}</p>
+              </div>
             </div>
-          </div>
-          <div className="rounded-lg">
-            <img src={hs4} alt="pic" width={500} className="rounded-lg" />
-            <div>
-              <h1 className="text-gray-800 font-bold">Hskan wjkd</h1>
-              <p className="text-gray-600">bamcnvnmc</p>
-            </div>
-          </div>
-          <div className=" rounded-lg">
-            <img src={hs5} alt="pic" width={500} className="rounded-lg" />
-            <div>
-              <h1 className="text-gray-800 font-bold">Hskan wjkd</h1>
-              <p className="text-gray-600">bamcnvnmc</p>
-            </div>
-          </div>
-          <div className=" rounded-lg">
-            <img src={hs6} alt="pic" width={500} className="rounded-lg" />
-            <div>
-              <h1 className="text-gray-800 font-bold">Hskan wjkd</h1>
-              <p className="text-gray-600">bamcnvnmc</p>
-            </div>
-          </div>
-          <div className=" rounded-lg">
-            <img src={hs2} alt="pic" width={500} className="rounded-lg" />
-            <div>
-              <h1 className="text-gray-800 font-bold">Hskan wjkd</h1>
-              <p className="text-gray-600">bamcnvnmc</p>
-            </div>
-          </div>
-          <div className=" rounded-lg">
-            <img src={hs2} alt="pic" width={500} className="rounded-lg" />
-            <div>
-              <h1 className="text-gray-800 font-bold">Hskan wjkd</h1>
-              <p className="text-gray-600">bamcnvnmc</p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>
