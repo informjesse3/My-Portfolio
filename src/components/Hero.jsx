@@ -15,7 +15,7 @@ const Hero = () => {
     <>
       <section className="relative w-full h-screen mx-auto bg-white">
         <motion.div variants={textVariant()}>
-          <div className="flex flex-row justify-between text-center">
+          <div className="">
             <h1 className="text-[#000] my-4 text-3xl font-bold cursor-pointer ">
               Home
             </h1>
@@ -61,7 +61,7 @@ const Hero = () => {
             className=" m-4 mt-4 text-secondary text-[14px] max-w-3xl leading-30"
           >
             <p className="text-gray-600 font-black md:text-[40px] sm:text-[30px] xs:text-[20px] text-[30px]">
-              Interior
+         Let's Create Your Dream Home
             </p>
             <h2 className="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider">
               Purpose.
