@@ -19,7 +19,7 @@ const Computers = ({ isMobile }) => {
       />
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.1 : 2.7}
+        scale={isMobile ? 1.9 : 3.7}
         position={isMobile ? [0, -3, -2.2] : [0, -3.25, 2.5]}
         rotation={[-0.01, -0.2, -0.01]}
       />
@@ -28,14 +28,15 @@ const Computers = ({ isMobile }) => {
 };
 
 const HouseModel = () => {
+
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width:700)");
+    const mediaQuery = window.matchMedia("(max-width: 700px)"); // Added "px" for correct media query syntax
     setIsMobile(mediaQuery.matches);
 
     const handleMediaQueryChange = (event) => {
-      setIsMobile(event, matches);
+      setIsMobile(event.matches); // Removed 'matches' parameter, as it's not needed
     };
 
     mediaQuery.addEventListener("change", handleMediaQueryChange);
@@ -44,6 +45,7 @@ const HouseModel = () => {
       mediaQuery.removeEventListener("change", handleMediaQueryChange);
     };
   }, []);
+
 
   return (
     <Canvas

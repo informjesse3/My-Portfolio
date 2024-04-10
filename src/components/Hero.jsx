@@ -32,10 +32,10 @@ const Hero = () => {
         <div
           className={`${styles.paddinX} absolute inset-0 top-[120px] max-w-[1200px] flex flex-row items-start gap-5`}
         >
-          {/* <div className="flex flex-col justify-center items-center mt-5">
+          <div className="flex flex-col justify-center items-center mt-5">
             <div className="w-5 h-5 rounded-full bg-gray-500" />
             <div className="w-1 sm:h-80 h-40  bg-gray-400" />
-          </div> */}
+          </div>
           <div className="h-full w-full flex flex-col ">
             <h1 className="text-[gray] px-4">
               In the world of creativity.
@@ -51,7 +51,7 @@ const Hero = () => {
           </div> */}
             {/* <EarthCanvas /> */}
 
-            <div className="w-full h-[800px]">
+            <div className="w-full sm:h-[800px] h-[400px] bg-gray-500 rounded-md">
               <HouseModel />
             </div>
           </div>
