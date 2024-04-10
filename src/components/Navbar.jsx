@@ -86,7 +86,7 @@ const Navbar = () => {
             to="/"
             className="rounded-full shadow-lg  m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300"
           >
-            <AiOutlineHome size={20} color={"black"} />
+            <AiOutlineHome size={20} color={"black"}  cursor={"pointer"}/>
           </NavLink>
 
           <NavLink

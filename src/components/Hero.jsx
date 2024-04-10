@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { textVariant } from "../utils/motion";
+import { fadeIn, textVariant } from "../utils/motion";
 import { styles } from "../styles";
 import { ComputersCanvas, EarthCanvas } from "./canvas";
 import {ImArrowRight} from "react-icons/im"
@@ -30,12 +30,12 @@ const Hero = () => {
           </div>
         </motion.div>
         <div
-          className={`${styles.paddinX} absolute inset-0 top-[120px] max-w-[1200px] flex flex-row items-start gap-5`}
+          className={`${styles.paddinX} absolute inset-0 top-[120px] max-w-[1200px] flex flex-col items-start gap-5`}
         >
-          <div className="flex flex-col justify-center items-center mt-5">
+          {/* <div className="flex flex-col justify-center items-center mt-5">
             <div className="w-5 h-5 rounded-full bg-gray-500" />
             <div className="w-1 sm:h-80 h-40  bg-gray-400" />
-          </div>
+          </div> */}
           <div className="h-full w-full flex flex-col ">
             <h1 className="text-[gray] px-4">
               In the world of creativity.
@@ -51,10 +51,36 @@ const Hero = () => {
           </div> */}
             {/* <EarthCanvas /> */}
 
-            <div className="w-full sm:h-[800px] h-[400px] bg-gray-500 rounded-md">
+            <div className="w-full sm:h-[800px] h-[400px] bg-gray-400 rounded-md mt-6">
               <HouseModel />
             </div>
           </div>
+
+          <motion.p
+            variants={fadeIn("", "", 0.1, 1)}
+            className=" m-4 mt-4 text-secondary text-[14px] max-w-3xl leading-30"
+          >
+            <p className="text-gray-600 font-black md:text-[40px] sm:text-[30px] xs:text-[20px] text-[30px]">
+              Interior
+            </p>
+            <h2 className="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider">
+              Purpose.
+            </h2>
+            <motion.p
+              variants={fadeIn("", "", 0.1, 1)}
+              className=" m-4 mt-4 text-secondary text-[14px] max-w-3xl leading-30"
+            >
+              We are a family owned company and started off for the love of
+              playing video games in the heart of Michigan. We got tired of the
+              same games and how the games being built would never listen to the
+              people playing. We wanted to change that. We started the company
+              We Have The Power Have The Power. We will be having several
+              divisions of this company. This is th gaming division. This is
+              just the begining of what can be done. We will be having Charity.
+              Learning as well as local events
+            </motion.p>
+       
+          </motion.p>
         </div>
 
         {/* <EarthCanvas /> */}
