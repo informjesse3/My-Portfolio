@@ -11,6 +11,7 @@ import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { Tilt } from "react-tilt";
 import { SectionWrapper } from "../hoc";
+import { NavLink } from "react-router-dom";
 
 
 const IMAGE = [
@@ -41,7 +42,9 @@ const About = () => {
       <div className=" flex flex-col justify-center text-center">
         <motion.div variants={textVariant()}>
           <p className={styles.sectionHeadText}>Introduction</p>
-          <h2 className={styles.sectionSubText}>Purpose.</h2>
+          <h2 className={styles.sectionSubText}>
+            <NavLink to={"/login"}>Purpose.</NavLink>
+          </h2>
         </motion.div>
         <div className="justify-center text-center flex">
           <motion.p

@@ -21,6 +21,7 @@ import {
 } from "./components";
 import Jessent from "./components/Jessent";
 import Kontact from "./components/Kontact";
+import Login from "./components/Login";
 const App = () => {
   return (
     <HashRouter>
@@ -32,9 +33,12 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/Kontact" element={<Kontact />} />
         <Route path="/model" element={<Jessent />} />
+        <Route path="/feedback" element={<Feedbacks />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </HashRouter>
   );
 };
 
 export default App;
+Feedbacks

@@ -104,14 +104,14 @@ const Navbar = () => {
           </NavLink>
 
           <NavLink
-            to="exp"
+            to="feedback"
             className="rounded-full shadow-lg m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300"
           >
             <AiOutlineProject size={20} color={"black"} />
           </NavLink>
 
           <NavLink
-            to="exp"
+            to="Kontact"
             className="rounded-full shadow-lg m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300"
           >
             <AiOutlineMail size={20} color={"black"} />

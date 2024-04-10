@@ -24,7 +24,7 @@ export default function Kontact() {
                   name="name"
                 />
               </div>
-              <div className="flex-col">
+              {/* <div className="flex-col w-full ">
                 <label className="uppercase text-sm py-2 text-gray-600">
                   Phone
                 </label>
@@ -33,28 +33,39 @@ export default function Kontact() {
                   type="text"
                   name="phone"
                 />
+              </div> */}
+              <div className="flex flex-col">
+                <label className="uppercase text-sm py-2 text-gray-600">
+                  Email
+                </label>
+                <input
+                  className="border-2 rounded-lg p-3 flex border-gray-300 bg-white text-gray-800"
+                  type="email"
+                  name="email"
+                />
+              </div>
+              <div className="flex flex-col">
+                <label className="uppercase text-sm py-2 text-gray-600">
+                  PHONE
+                </label>
+                <input
+                  className="border-2 rounded-lg p-3 flex border-gray-300 bg-white text-gray-800"
+                  type="text"
+                  name="phone"
+                />
+              </div>
+              <div className="flex flex-col">
+                <label className="uppercase text-sm py-2 text-gray-600">
+                  Subject
+                </label>
+                <input
+                  className="border-2 rounded-lg p-3 flex border-gray-300 bg-white text-gray-800"
+                  type="text"
+                  name="subject"
+                />
               </div>
             </div>
-            <div className="flex flex-col py-2">
-              <label className="uppercase text-sm py-2 text-gray-600">
-                Email
-              </label>
-              <input
-                className="border-2 rounded-lg p-3 flex border-gray-300 bg-white text-gray-800"
-                type="email"
-                name="email"
-              />
-            </div>
-            <div>
-              <label className="uppercase text-sm py-2 text-gray-600">
-                Subject
-              </label>
-              <input
-                className="border-2 rounded-lg p-3 flex border-gray-300 bg-white text-gray-800"
-                type="text"
-                name="subject"
-              />
-            </div>
+
             <div className="flex flex-col py-2">
               <label className="uppercase text-sm py-2 text-gray-600">
                 Message
