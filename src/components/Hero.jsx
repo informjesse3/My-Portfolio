@@ -68,20 +68,19 @@ const Hero = () => {
               variants={fadeIn("", "", 0.1, 1)}
               className=" m-4 mt-4 text-secondary text-[14px] max-w-3xl leading-30"
             >
-              Welcome to JessEnt 3D where imagination meets reality!
-              We specialize in crafting intricate three-dimensional models of
+              Welcome to JessEnt 3D where imagination meets reality! We
+              specialize in crafting intricate three-dimensional models of
               houses, transforming architectural blueprints into immersive
-              virtual experiences. At Virtual Homes 3D, we understand that a
-              house is more than just bricks and mortar; it's a sanctuary, a
-              space where memories are made and dreams are realized. Our mission
-              is to bring those dreams to life through our state-of-the-art
-              modeling techniques and cutting-edge technology. With our
-              photorealistic renderings and immersive virtual tours, clients can
-              explore their future homes from every angle, gaining a true sense
-              of the scale, layout, and ambiance. We utilize the latest virtual
-              reality technology to provide an unparalleled level of immersion,
-              allowing clients to walk through their homes as if they were
-              already there.
+              virtual experiences. At JessEnt 3D, we understand that a house is
+              more than just bricks and mortar; it's a sanctuary, a space where
+              memories are made and dreams are realized. Our mission is to bring
+              those dreams to life through our state-of-the-art modeling
+              techniques and cutting-edge technology. With our photorealistic
+              renderings and immersive virtual tours, clients can explore their
+              future homes from every angle, gaining a true sense of the scale,
+              layout, and ambiance. We utilize the latest virtual reality
+              technology to provide an unparalleled level of immersion, allowing
+              clients to walk through their homes as if they were already there.
             </motion.p>
           </motion.p>
         </div>

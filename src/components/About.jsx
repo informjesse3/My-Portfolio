@@ -63,8 +63,8 @@ const About = () => {
             Whether you're an architect looking to showcase your designs, a real
             estate developer seeking to pre-visualize your projects, or a
             homeowner eager to visualize your dream home before construction
-            begins, Virtual Homes 3D is your trusted partner every step of the
-            way. Our team of skilled artists and designers meticulously recreate
+            begins, JessEnt 3D is your trusted partner every step of the way.
+            Our team of skilled artists and designers meticulously recreate
             every detail of the house, from the architectural structure to the
             interior furnishings and decor, ensuring that the final model is an
             accurate representation of the envisioned space.
