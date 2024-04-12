@@ -93,13 +93,13 @@ const About = () => {
                   damping: 90,
                 }}
                   
-                  className="text-gray-800 font-bold"
+                  className="text-gray-800 font-bold select-none"
                 >
                   {image.title}
                 </motion.p>
                 <p
                
-                  className="text-gray-600 cursor-pointer hover:underline"
+                  className="text-gray-600 cursor-pointer hover:underline select-none"
                 >
                   {image.des}
                 </p>
