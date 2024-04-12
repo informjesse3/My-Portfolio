@@ -69,7 +69,7 @@ const About = () => {
                   key={index}
                   src={image.pic}
                   alt="image"
-                  className="object-cover w-full h-full block shrink-0 grow-0 rounded-lg"
+                  className="object-cover w-full h-full  rounded-lg"
                 />
               </div>
               <div>

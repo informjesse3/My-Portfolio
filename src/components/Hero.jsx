@@ -13,24 +13,22 @@ import { SectionWrapper } from "../hoc";
 const Hero = () => {
   return (
     <>
-      <section className="relative w-full h-screen mx-auto bg-white">
-        <motion.div variants={textVariant()}>
-          <div className="">
-            <h1 className="text-[#000] my-4 text-3xl font-bold cursor-pointer ">
-              Home
-            </h1>
-            <p className="text-gray-600 cursor-pointer hover:text-[#915eff] flex flex-row text-center justify-center gap-1">
-              <span className="mt-1">
-                <ImArrowRight className="text-sm sm:lg" />
-              </span>
-              <NavLink to={"model"} className="text-sm sm:md">
-                Browse Models
-              </NavLink>
-            </p>
-          </div>
+      <div className="relative  w-full h-screen mx-auto bg-white">
+        <motion.div variants={textVariant()} className="mt-3">
+          <h1 className="text-[#000] my-4 text-3xl font-bold cursor-pointer ">
+            Home
+          </h1>
+          <p className="text-gray-600 cursor-pointer hover:text-[#915eff] flex flex-row text-center justify-center gap-1">
+            <span className="mt-1">
+              <ImArrowRight className="text-sm sm:lg" />
+            </span>
+            <NavLink to={"model"} className="text-sm sm:md">
+              Browse Models
+            </NavLink>
+          </p>
         </motion.div>
         <div
-          className={`${styles.paddinX} absolute inset-0 top-[120px] max-w-[1200px] flex flex-col items-start gap-5`}
+          // className={` absolute inset-0 top-[120px] max-w-[1200px] flex flex-col items-start gap-5`}
         >
           {/* <div className="flex flex-col justify-center items-center mt-5">
             <div className="w-5 h-5 rounded-full bg-gray-500" />
@@ -61,7 +59,7 @@ const Hero = () => {
             className=" m-4 mt-4 text-secondary text-[14px] max-w-3xl leading-30"
           >
             <p className="text-gray-600 font-black md:text-[40px] sm:text-[30px] xs:text-[20px] text-[30px]">
-         Let's Create Your Dream Home
+              Let's Create Your Dream Home
             </p>
             <h2 className="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider">
               Purpose.
@@ -79,37 +77,11 @@ const Hero = () => {
               just the begining of what can be done. We will be having Charity.
               Learning as well as local events
             </motion.p>
-       
           </motion.p>
         </div>
 
-        {/* <EarthCanvas /> */}
-
-        {/* <div className="my-80">
-        {" "}
-        <Login />
-      </div> */}
-
-        {/* <div className="absolute xs:bottom-10 bottom-32  w-full flex justify-center items-center ">
-        <a href="about">
-          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-items-center items-start p-2">
-            <motion.dev
-              animate={{
-                y: [0, 24, 0],
-              }}
-
-              
-              transition={{
-                duration: 4.5,
-                repeat: Infinity,
-                repeatType: "loop",
-              }}
-              className="w-3 h-3 bg-secondary mb-1 rounded-full"
-            />
-          </div>
-        </a>
-      </div> */}
-      </section>
+     
+      </div>
     </>
   );
 };
