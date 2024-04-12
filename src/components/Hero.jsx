@@ -28,7 +28,7 @@ const Hero = () => {
           </p>
         </motion.div>
         <div
-          // className={` absolute inset-0 top-[120px] max-w-[1200px] flex flex-col items-start gap-5`}
+        // className={` absolute inset-0 top-[120px] max-w-[1200px] flex flex-col items-start gap-5`}
         >
           {/* <div className="flex flex-col justify-center items-center mt-5">
             <div className="w-5 h-5 rounded-full bg-gray-500" />
@@ -68,19 +68,23 @@ const Hero = () => {
               variants={fadeIn("", "", 0.1, 1)}
               className=" m-4 mt-4 text-secondary text-[14px] max-w-3xl leading-30"
             >
-              We are a family owned company and started off for the love of
-              playing video games in the heart of Michigan. We got tired of the
-              same games and how the games being built would never listen to the
-              people playing. We wanted to change that. We started the company
-              We Have The Power Have The Power. We will be having several
-              divisions of this company. This is th gaming division. This is
-              just the begining of what can be done. We will be having Charity.
-              Learning as well as local events
+              Welcome to JessEnt 3D where imagination meets reality!
+              We specialize in crafting intricate three-dimensional models of
+              houses, transforming architectural blueprints into immersive
+              virtual experiences. At Virtual Homes 3D, we understand that a
+              house is more than just bricks and mortar; it's a sanctuary, a
+              space where memories are made and dreams are realized. Our mission
+              is to bring those dreams to life through our state-of-the-art
+              modeling techniques and cutting-edge technology. With our
+              photorealistic renderings and immersive virtual tours, clients can
+              explore their future homes from every angle, gaining a true sense
+              of the scale, layout, and ambiance. We utilize the latest virtual
+              reality technology to provide an unparalleled level of immersion,
+              allowing clients to walk through their homes as if they were
+              already there.
             </motion.p>
           </motion.p>
         </div>
-
-     
       </div>
     </>
   );

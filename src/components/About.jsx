@@ -60,14 +60,14 @@ const About = () => {
             variants={fadeIn("", "", 0.1, 1)}
             className="mt-4 text-secondary text-[14px] max-w-3xl leading-30 "
           >
-            We are a family owned company and started off for the love of
-            playing video games in the heart of Michigan. We got tired of the
-            same games and how the games being built would never listen to the
-            people playing. We wanted to change that. We started the company We
-            Have The Power Have The Power. We will be having several divisions
-            of this company. This is th gaming division. This is just the
-            begining of what can be done. We will be having Charity. Learning as
-            well as local events
+            Whether you're an architect looking to showcase your designs, a real
+            estate developer seeking to pre-visualize your projects, or a
+            homeowner eager to visualize your dream home before construction
+            begins, Virtual Homes 3D is your trusted partner every step of the
+            way. Our team of skilled artists and designers meticulously recreate
+            every detail of the house, from the architectural structure to the
+            interior furnishings and decor, ensuring that the final model is an
+            accurate representation of the envisioned space.
           </motion.p>
         </div>
         <div className="mt-20 grid md:grid-cols-2 lg:grid-cols-3 gap-2 px-2 justify-center mb-4">
@@ -81,26 +81,20 @@ const About = () => {
                   className="object-cover w-full h-full  rounded-lg"
                 />
               </div>
-              <div
-                className="items-start flex flex-col ml-3"
-              >
+              <div className="items-start flex flex-col ml-3">
                 <motion.p
-                initial={{ scale: 0 }}
-                animate={{ scale: 1 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 260,
-                  damping: 90,
-                }}
-                  
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 260,
+                    damping: 90,
+                  }}
                   className="text-gray-800 font-bold select-none"
                 >
                   {image.title}
                 </motion.p>
-                <p
-               
-                  className="text-gray-600 cursor-pointer hover:underline select-none"
-                >
+                <p className="text-gray-600 cursor-pointer hover:underline select-none">
                   {image.des}
                 </p>
               </div>
