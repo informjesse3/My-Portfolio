@@ -1,4 +1,4 @@
-import React from "react"; 
+import React from "react";
 import { motion, stagger } from "framer-motion";
 import hs1 from "../assets/hsmodels/jesssent1.png";
 import hs2 from "../assets/hsmodels/jesscity4.png";
@@ -13,7 +13,6 @@ import { Tilt } from "react-tilt";
 import { SectionWrapper } from "../hoc";
 import { NavLink } from "react-router-dom";
 
-
 const IMAGE = [
   { pic: hs3, title: "3 Bedroom ", des: "View more" },
   { pic: hs4, title: "1 Bedroom", des: "View more" },
@@ -25,18 +24,26 @@ const IMAGE = [
   { pic: hs5, title: "2 Bedroom", des: "View more" },
 ];
 
-const ServiceCard = ({index, title, icon}) => {
-  return(
+const ServiceCard = ({ index, title, icon }) => {
+  return (
     <Tilt className="xs:w-[250px] w-full">
-      <motion.div variants={fadeIn("right", "spring", 0.5 * index, 0.75)} className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'>
-        <div options={{max:45, scale:1, speed:450}} className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'>
+      <motion.div
+        variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
+        className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+      >
+        <div
+          options={{ max: 45, scale: 1, speed: 450 }}
+          className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+        >
           <img src={icon} alt={title} className="w-16 h-16 object-contain" />
-          <h3 className="text-white text-[20px] font-bold text-center">{title}</h3>
+          <h3 className="text-white text-[20px] font-bold text-center">
+            {title}
+          </h3>
         </div>
       </motion.div>
     </Tilt>
-  )
-}
+  );
+};
 
 const About = () => {
   return (
@@ -74,9 +81,28 @@ const About = () => {
                   className="object-cover w-full h-full  rounded-lg"
                 />
               </div>
-              <div className="items-start flex flex-col ml-3">
-                <h1 className="text-gray-800 font-bold">{image.title}</h1>
-                <p className="text-gray-600 cursor-pointer hover:underline">{image.des}</p>
+              <div
+                className="items-start flex flex-col ml-3"
+              >
+                <motion.p
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
+                transition={{
+                  type: "spring",
+                  stiffness: 260,
+                  damping: 90,
+                }}
+                  
+                  className="text-gray-800 font-bold"
+                >
+                  {image.title}
+                </motion.p>
+                <p
+               
+                  className="text-gray-600 cursor-pointer hover:underline"
+                >
+                  {image.des}
+                </p>
               </div>
             </div>
           ))}
@@ -86,4 +112,4 @@ const About = () => {
   );
 };
 
-export default About
+export default About;
