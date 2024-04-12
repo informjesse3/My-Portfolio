@@ -78,7 +78,7 @@ const About = () => {
                   key={index}
                   src={image.pic}
                   alt="image"
-                  className="object-cover w-full h-full  rounded-lg"
+                  className="object-cover w-full h-full  "
                 />
               </div>
               <div className="items-start flex flex-col ml-3">
