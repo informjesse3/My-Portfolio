@@ -94,7 +94,7 @@ const About = () => {
                 >
                   {image.title}
                 </motion.p>
-                <p className="text-gray-600 cursor-pointer hover:underline select-none">
+                <p className="text-gray-600 cursor-pointer hover:underline select-none underline-offset-4">
                   {image.des}
                 </p>
               </div>
