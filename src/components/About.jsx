@@ -15,12 +15,14 @@ import { NavLink } from "react-router-dom";
 
 
 const IMAGE = [
-  { pic: hs1, title: "House Model 1", des: "hsdhkba ajjahjdhk" },
-  { pic: hs2, title: "House Model 1", des: "hsdhkba ajjahjdhk" },
-  { pic: hs3, title: "House Model 1", des: "hsdhkba ajjahjdhk" },
-  { pic: hs4, title: "House Model 1", des: "hsdhkba ajjahjdhk" },
-  { pic: hs5, title: "House Model 1", des: "hsdhkba ajjahjdhk" },
-  { pic: hs6, title: "House Model 1", des: "hsdhkba ajjahjdhk" },
+  { pic: hs3, title: "3 Bedroom ", des: "View more" },
+  { pic: hs4, title: "1 Bedroom", des: "View more" },
+  { pic: hs5, title: "2 Bedroom", des: "View more" },
+  { pic: hs6, title: "Studio", des: "View more" },
+  // { pic: hs1, title: "House Model 1", des: "hsdhkba ajjahjdhk" },
+  // { pic: hs2, title: "House Model 1", des: "hsdhkba ajjahjdhk" },
+  { pic: hs4, title: "1 Bedroom", des: "View more" },
+  { pic: hs5, title: "2 Bedroom", des: "View more" },
 ];
 
 const ServiceCard = ({index, title, icon}) => {
@@ -61,7 +63,7 @@ const About = () => {
             well as local events
           </motion.p>
         </div>
-        <div className="mt-20 grid md:grid-cols-2 lg:grid-cols-3 gap-2 px-2 justify-center">
+        <div className="mt-20 grid md:grid-cols-2 lg:grid-cols-3 gap-2 px-2 justify-center mb-4">
           {IMAGE.map((image, index) => (
             <div>
               <div className="" key={index}>
@@ -72,9 +74,9 @@ const About = () => {
                   className="object-cover w-full h-full  rounded-lg"
                 />
               </div>
-              <div>
+              <div className="items-start flex flex-col ml-3">
                 <h1 className="text-gray-800 font-bold">{image.title}</h1>
-                <p className="text-gray-600">{image.des}</p>
+                <p className="text-gray-600 cursor-pointer hover:underline">{image.des}</p>
               </div>
             </div>
           ))}
