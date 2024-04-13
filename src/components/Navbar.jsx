@@ -29,10 +29,10 @@ const Navbar = () => {
         color="#000"
         size={24}
         onClick={handleNav}
-        className="absolute top-4 right-4 z-[50] md:hidden cursor-pointer"
+        className="absolute top-4 right-4 z-[50] md:hidden cursor-pointer select-none"
       />
       {nav ? (
-        <div className="fixed md:hidden w-full h-screen bg-white/90 flex flex-col justify-center items center z-20">
+        <div className="fixed select-none md:hidden w-full h-screen bg-white/90 flex flex-col justify-center items center z-20">
           <NavLink
             onClick={handleNav}
             to="/"
@@ -81,7 +81,7 @@ const Navbar = () => {
       ) : (
         ""
       )}
-      <div className="md:block hidden  z-[1000] bg-white">
+      <div className="md:block hidden  z-[1000] bg-white select-none">
         <div className="flex flex-row justify-end z-[1000]">
           <NavLink
             to="/"

@@ -13,7 +13,7 @@ import { SectionWrapper } from "../hoc";
 const Hero = () => {
   return (
     <>
-      <div className="relative  w-full h-screen mx-auto bg-white">
+      <div className="relative  w-full h-screen mx-auto bg-white select-none">
         <motion.div variants={textVariant()} className="mt-3">
           <h1 className="text-[#000] my-4 text-3xl font-bold cursor-pointer ">
             Home

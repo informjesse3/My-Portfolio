@@ -22,7 +22,7 @@ import HouseModel from './canvas/HouseModel';
 export default function Jessent() {
 
   return (
-    <div className="relative z-0 bg-white ">
+    <div className="relative z-0 bg-white select-none">
       <div className="h-screen">
         <motion.div variants={textVariant()} className="ml-4">
           <p className="text-gray-600 font-black md:text-[40px] sm:text-[30px] xs:text-[20px] text-[30px]">
@@ -32,7 +32,7 @@ export default function Jessent() {
             Purpose.
           </h2>
         </motion.div>
-        <ComputersCanvas/>
+        <ComputersCanvas />
       </div>
 
       <motion.p

@@ -61,18 +61,18 @@ const Experience = () => {
     <>
       <motion.div variants={textVariant()}>
         <p
-          className={`sm:text-[18px] text-[14px] text-gray-600 uppercase tracking-wider text-center`}
+          className={`sm:text-[18px] text-[14px] text-gray-600 uppercase tracking-wider text-center select-none`}
         >
           What we have done so far
         </p>
         <h2
-          className={`text-gray-800 font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center`}
+          className={`text-gray-800 font-black md:text-[60px] select-none sm:text-[50px] xs:text-[40px] text-[30px] text-center`}
         >
           Work Experience.
         </h2>
       </motion.div>
 
-      <div className="mt-20 flex flex-col">
+      <div className="mt-20 flex flex-col select-none">
         <VerticalTimeline>
           {experiences.map((experience, index) => (
             <ExperienceCard
