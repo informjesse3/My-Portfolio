@@ -46,25 +46,46 @@ return () => {
 }
 
   }, [])
+  const [active, setActive] = React.useState(true)
+
+  function handleActive(){
+    setActive(true)
+  }
+   function handleInActive() {
+     setActive(false);
+   }
   
   return (
-    <Canvas
-      frameloop="demand"
-      shadows
-      camera={{ position: [60, 3, 5], fov: 25 }}
-      gl={{ preserveDrawingBuffer: true }}
-    >
-      <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls
-          autoRotate
-          enableZoom={true}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
-        />
-        <Computers isMobile={isMobile} />
-      </Suspense>
-      <Preload all />
-    </Canvas>
+    <>
+      <Canvas
+        frameloop="demand"
+        shadows
+        camera={{ position: [60, 3, 5], fov: 25 }}
+        gl={{ preserveDrawingBuffer: true }}
+      >
+        <Suspense fallback={<CanvasLoader />}>
+          <OrbitControls
+            autoRotate={active}
+            enableZoom={true}
+            maxPolarAngle={Math.PI / 2}
+            minPolarAngle={Math.PI / 2}
+          />
+          <Computers isMobile={isMobile} />
+        </Suspense>
+        <Preload all />
+      </Canvas>
+      <div className="absolute top-[30%] left-10 flex gap-1">
+        <button className="bg-gray-300 p-1 rounded px-4" onClick={handleActive}>
+          Activate
+        </button>
+        <button
+          className="bg-gray-400 p-1 rounded px-3 text-gray-700"
+          onClick={handleInActive}
+        >
+          Deactivate
+        </button>
+      </div>
+    </>
   );
 }
 
