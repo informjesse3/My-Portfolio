@@ -59,7 +59,7 @@ return () => {
     <>
       <Canvas
         frameloop="demand"
-        shadows
+        shadows={true}
         camera={{ position: [60, 3, 5], fov: 25 }}
         gl={{ preserveDrawingBuffer: true }}
       >

@@ -14,7 +14,7 @@ const Computers = ({ isMobile }) => {
         angle={0.42}
         penumbra={1}
         intensity={1}
-        castShadow
+        castShadow = {true}
         shadow-mapSize={1024}
       />
       <primitive
@@ -58,10 +58,9 @@ const HouseModel = () => {
 
   return (
     <>
-      {" "}
       <Canvas
         frameloop="demand"
-        shadows
+        shadows = {true}
         camera={{ position: [60, 3, 5], fov: 25 }}
         gl={{ preserveDrawingBuffer: true }}
       >
