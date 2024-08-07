@@ -1,13 +1,18 @@
 import React from "react";
+import Spinner1 from "./Spinner1";
 
 export default function Kontact() {
   return (
     <>
       <section className="relative w-full mx-auto bg-white select-none">
+    
         <div id="contact" className="max-w-[1040px] m-4 md:pl-20 py-16">
-          <h1 className="py-4 text-4xl font-bold text-center text-[#000]">
+      <div className="flex flex-row justify-center">
+        <h1 className="py-4 text-4xl font-bold text-center text-[#000]">
             Contact
           </h1>
+          <Spinner1 />
+          </div>
           <form
             action="https://getform.io/f/8bdaa4bc-519d-4301-a68b-5b65e5132316"
             method="POST"

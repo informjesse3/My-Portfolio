@@ -19,7 +19,7 @@ const Hero = () => {
             Home
           </h1>
           <p className="text-gray-600 cursor-pointer hover:text-[#915eff] flex flex-row text-center justify-center gap-1">
-            <span className="mt-1">
+            <span className="">
               <ImArrowRight className="text-sm sm:lg" />
             </span>
             <NavLink to={"model"} className="text-sm sm:md">

@@ -2,6 +2,7 @@ import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
+import Spinner1 from "../Spinner1";
 
 const Computers = ({ isMobile }) => {
   const computer = useGLTF("./Logop/scene.gltf");
